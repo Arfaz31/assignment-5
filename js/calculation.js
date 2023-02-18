@@ -90,3 +90,26 @@ document.getElementById("pentagon-calculate-btn").addEventListener("click", func
    })
    
   
+
+   // for ellipse
+document.getElementById("ellipse-calculate-btn").addEventListener("click", function(){
+
+    // for base value
+  const baseValue= document.getElementById("ellipse-base-value");
+  const baseValueString= baseValue.value;
+  const baseValueNumber= parseFloat(baseValueString);
+  baseValue.value="";
+ 
+  // for height value
+  const heightValue= document.getElementById("ellipse-height-value");
+  const heightValueString= heightValue.value;
+  const heightValueNumber= parseFloat(heightValueString);
+  heightValue.value= "";
+  
+  // base and height multiplication
+  const ellipseTotal= 3.14 * baseValueNumber * heightValueNumber;
+ 
+  //  show the value in area calculation
+  displayData('Ellipse', ellipseTotal)
+ 
+ })
