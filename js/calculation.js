@@ -13,8 +13,10 @@ function getArea(baseValueId, heightValueId){
     heightValue.value= "";
     
     // base and height multiplication
-    const areaCalTotal= 0.5 * baseValueNumber * heightValueNumber;
-    return areaCalTotal;
+       const areaCalTotalString= (0.5 * baseValueNumber * heightValueNumber).toFixed(2);
+       const areaCalTotal = parseFloat(areaCalTotalString);
+       return areaCalTotal;
+   
    }
    
    
@@ -32,8 +34,10 @@ function getArea(baseValueId, heightValueId){
     heightValue.value= "";
    
     // base and height multiplication
-    const areaCalculation= baseValueNumber * heightValueNumber;
+    const areaCalculationString= (baseValueNumber * heightVlueNumber).toFixed(2);
+    const areaCalculation= parseFloat(areaCalculationString);
     return areaCalculation;
+
    }
    
    let countNo = 0;
@@ -107,7 +111,8 @@ document.getElementById("ellipse-calculate-btn").addEventListener("click", funct
   heightValue.value= "";
   
   // base and height multiplication
-  const ellipseTotal= 3.14 * baseValueNumber * heightValueNumber;
+  const ellipseCalTotalString= (3.14 * baseValueNumber * heightValueNumber).toFixed(2);
+ const ellipseTotal= parseFloat(ellipseCalTotalString);
  
   //  show the value in area calculation
   displayData('Ellipse', ellipseTotal)
