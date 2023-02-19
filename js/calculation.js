@@ -87,3 +87,10 @@ document.getElementById("ellipse-calculate-btn").addEventListener("click", funct
   displayData('Ellipse', ellipseTotal)
  
  })
+
+//  for Query section
+document.getElementById("blog-btn").addEventListener("click", function(){
+    window.location.href="Query.html"
+  })
+  
+  
