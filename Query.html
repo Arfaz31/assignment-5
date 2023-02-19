@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry QA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body class="container">
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-info px-2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <h3 class="mb-0">Interactive</h3>
+                    Geometry Genius
+                </a>
+             <button id="back-btn"class="btn btn-outline-success">Back</button>
+            
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="accordion mt-5" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              1. What is DOM and what is the purpose of DOM?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             DOM is a document object module that is logical structure of document. 
+             purpose of DOM is we can esily manipulate the the HTML and easily called any docuent object.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+               2. How will you select HTML elements using DOM? Name the DOM methods.
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              HTML select by the getElementby ID, Class name, tag.
+             <br>
+             HTML DOM methods are getElementById() , getElementsByClassName(), getElementsByName(),getElementsByTagName(), querySelector().
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+             3. What is event bubble?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Event bubble is the concept the DOM. Occuring when  an element receive an event then event bubble up its parent. Its continue till its reached its root.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingfour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+               4. What is a callback function and why will you use it?
+              </button>
+            </h2>
+            <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Callback function is not run before the task is complete but run right after the task is completed. When A function declaration  in the argument parenthesis of every other function, then we can call later inside the program so that we avoiding the error.
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+    <!-- BS FILE HERE -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script> 
+</body>
+</html>
